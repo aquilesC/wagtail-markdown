@@ -11,7 +11,7 @@ import warnings
 
 from django.utils.encoding import smart_text
 from django.utils.safestring import mark_safe
-
+from django.conf import settings
 import bleach
 import markdown
 
@@ -149,6 +149,8 @@ def _get_markdown_kwargs():
         ]
     }
     markdown_kwargs['output_format'] = 'html5'
+    if hasattr(settings, 'WAGTAILMARKDOWN_EXTENSIONS'):
+        markdown_kwargs['extensions'] += settings.WAGTAILMARKDOWN_EXTENSIONS
     return markdown_kwargs
 
 
