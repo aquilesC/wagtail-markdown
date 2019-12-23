@@ -30,8 +30,8 @@ README = README.format(
 
 
 INSTALL_REQUIRES = [
-    'Markdown>=2.6,<2.7',
-    'bleach>=1.4.2,<2.2',
+    'Markdown>=2.6',
+    'bleach>=1.4.2',
     'Wagtail>=2.0',
 ]
 
@@ -56,7 +56,7 @@ CLASSIFIERS = [
 
 setup(
     name='wagtail-markdown',
-    version='0.5',
+    version='0.5.dev01',
     description='Markdown support for Wagtail',
     long_description="Provides Markdown page field and streamfield block for "
                      "Wagtail. More info: {}".format(README),
