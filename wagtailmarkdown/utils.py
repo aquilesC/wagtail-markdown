@@ -145,7 +145,8 @@ def _get_markdown_kwargs():
     ]
     markdown_kwargs['extension_configs'] = {
         'codehilite': [
-            ('guess_lang', False),
+            ('guess_lang', True),
+            ('use_pygments', True),
         ]
     }
     markdown_kwargs['output_format'] = 'html5'
