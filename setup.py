@@ -30,7 +30,7 @@ README = README.format(
 
 
 INSTALL_REQUIRES = [
-    'Markdown>=2.6',
+    'Markdown>=3.2.1',
     'bleach>=1.4.2',
     'Wagtail>=2.0',
 ]
